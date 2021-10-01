@@ -1,38 +1,11 @@
 # Grain-Analyser
 Rice Analyser can calculate the Morphological parameters of rice From scanner images With assisted cluster separation algorithms. Parameters: based on whiteness , length ,Area ,Aspect ratio  Classification: whiteness, big broken, chalky &amp; discolored rice.
 
-# -*- coding: utf-8 -*-
 """
 Created on Tue Sep 28 10:26:38 2021
 
 @author: Ankitha
 """
-
-'''import cv2
-import numpy as np
-from matplotlib import pyplot as plt
-from scipy import ndimage
-from skimage import measure, color, io
-from skimage.feature import peak_local_max
-from scipy import ndimage as ndi
-import skimage
-import discoloured_function
-import chalky_function
-
-image = cv2.imread("D:/a/ANKITHA/Professional/ASPIRE/images/mix_rice.jpg")
-image = cv2.resize(image, (1104, 1376))
-image= image[300:1376, 0:1104]
-
-Tot_count=45
-a=discoloured_function.dis(image,Tot_count)
-cv2.imshow('a',a) 
-cv2.waitKey(0)
-cv2.destroyAllWindows()
-b=chalky_function.Chal(image, Tot_count,a)
-
-cv2.imshow('b',b) 
-cv2.waitKey(0)
-cv2.destroyAllWindows()'''
 
 import cv2
 import numpy as np
@@ -48,7 +21,7 @@ import clwa_function
 import broken_function
 #import good_function
 
-image = cv2.imread("D:/a/ANKITHA/Professional/ASPIRE/images/mix_rice3.jpg")
+image = cv2.imread("mix_rice3.jpg")
 image = cv2.resize(image, (1104, 1376))
 image= image[300:1376, 0:1104]
 cv2.imshow('original image', image)
